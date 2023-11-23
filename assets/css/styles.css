@@ -1,0 +1,108 @@
+@import url('reset.css');
+
+:root {
+    --background-color: #F9F9F9;
+    --header-background: #FFF;
+    --button-background: #CC0000;
+    --button-text: #FFFFFF;
+    --text-color: #000;
+    --sub-text-color: #515151;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.header {
+  display: grid;
+  width: 100%;
+  height: 56px;
+  padding: 0px 24px;
+  justify-items: space-between;
+  align-items: center;
+  background-color: var(--header-background);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.header .start{
+  justify-self: start;
+  align-self: center;
+}
+
+.header .start img{
+  padding-right: 32px;
+}
+
+.header .center{
+  justify-self: center;
+  align-self: center;
+}
+
+.header .center .search{
+  position: relative;
+  right: 45px;
+  bottom: 6px;
+}
+
+.header .end img{
+  padding-left: 24px;
+}
+
+.header .end{
+  justify-self: end;
+  align-self: center;
+}
+
+.main {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 1fr;
+}
+
+.main .sidebar {
+  padding: 24px;
+}
+
+.main .sidebar p {
+  color: #000;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.main .container .container-videos {
+  display: grid;
+  width: 98%;
+  height: 100vh;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 20px;
+}
+
+.main .container .container-videos .video-item{
+  display: grid;
+  justify-items: center;
+  align-self: center;
+}
+
+.main .container .container-videos .video-item img{
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.main .container .container-videos .video-item p{
+  color: #000;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+}
